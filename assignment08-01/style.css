@@ -1,0 +1,170 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10fr minmax(30px, 0.5fr) 4fr;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --font-color: black;
+  --bg-color: rgb(78, 78, 78);
+  --border-color: 1px solid grey;
+  --opacity: 0.4;
+
+  --selcted-font-color: black;
+  --selcted-bg-color: transparent;
+  --selected-button-color: rgb(0, 13, 49);
+  --selcted-border-color: 1px solid black;
+  --selected-opacity: 1;
+}
+.select {
+  height: 100%;
+  border: 1px solid;
+  color: var(--font-color);
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+.select__item {
+  border: var(--border-color);
+  opacity: var(--opacity);
+  background-color: var(--bg-color);
+  display: grid;
+  grid-template-columns: 30px minmax(310px, 1fr) minmax(100px, 300px);
+  grid-template-rows: 1fr 1fr;
+}
+.select__item:hover {
+  transition-property: opacity;
+  transition-duration: 0.8s;
+  opacity: var(--selected-opacity);
+  border: 3px solid black;
+}
+.korea:hover {
+  background: url("https://w.namu.la/s/43a07e65f573eb41fffe67ac0d1008fa73b5c7a04a004ff9004ddf0680524c5c5bd8a30c724fd7966bd7d3a2f60d0bd17c3cc159dd41f704f9b6dc188a21346d491e12fa21defa9be217eba46ad50bb2f6b44f1081553d9393532a7c73dcd4de")
+    no-repeat center center;
+  background-size: cover;
+}
+.japan:hover {
+  background: url("https://w.namu.la/s/eb6b54ab93ea2f7c6c0247a5b87896db1f93f18c628d5b0d1ff25103aa1b2e9482edebf31f882ec0472dfd32928666ca195d18002a0ec8c8e6b7d9984e0ab9483aed6e256fd2e74982f736558c8fda689479e6cde5164a72d1ff5a3cc8fc387d")
+    no-repeat center center;
+  background-size: cover;
+}
+.france:hover {
+  background: url("https://w.namu.la/s/ec6906ad7483307eef6a9efba228fe1be249d34b54538f7a51047922871a3893fdd83670be2aeea39bf713719284cdda45f8d451a00f9731fb76fb7273b794013b50277321a232a883d5e40108f1d39a0c6d61d4f30c14061b1794a3bfd20f09")
+    no-repeat center center;
+  background-size: cover;
+}
+.colombia:hover {
+  background: url("https://w.namu.la/s/b3e6ea7bfa6b14932b68bdb03731e8ec40119a1df571f4513329aac8d1bcb1f87e3216a6643df1c3fbbaa3441268f01752164c49db470004939fa68b7af3e495fba170f472615e36665f620c1574768c37c96f1397894febf59a0da25a124c5a")
+    no-repeat center center;
+  background-size: cover;
+}
+.usa:hover {
+  background: url("https://w.namu.la/s/82e8f0ba23b7861b4ae69bcf0523076d2151136ad3591c81e8cb49e563a6c46a9faaaa519f1f60a1f581714ddcf63c8c8c22d79c9e93ba0b010ca00663baf8296cd950673be8d4fae04db18b092b5a6ef398b91350190e59c60d9cfafc5f7a37")
+    no-repeat center center;
+  background-size: cover;
+}
+.uk:hover {
+  background: url("https://w.namu.la/s/efeda0494c58894d239525a23f02d68ed6618857e6ea60897f4ce49be92ec7e0ac314d888a459673d9ef7f8bd78db98d9bfc6cf20db6e6427fb85827154dfa78522f5817b48b75c9fac0676ad425ff4a6bb820449d19420d8ea8aefb7e9d63ab")
+    no-repeat top center;
+  background-size: cover;
+}
+
+.select_item__tag {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1 / span 2;
+}
+.select_item__title {
+  border: var(--border-color);
+  height: 100%;
+  font-size: 60px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  grid-row: 1 / span 2;
+}
+.select_item__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.select_item__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select_item__button button {
+  width: 80%;
+  height: 80%;
+  background-color: var(--font-color);
+  border-radius: 30px;
+  color: var(--bg-color);
+  border: none;
+}
+
+.divide-box {
+  border: var(--border-color);
+  display: grid;
+  grid-template-rows: 10fr 1fr 10fr;
+}
+.divide-box__top {
+  height: 100%;
+  background-color: rgb(255, 121, 121);
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divide-box__img {
+  height: 100%;
+  background-color: white;
+}
+.divide-box__bottom {
+  background-color: rgb(134, 134, 241);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-box {
+  border: var(--border-color);
+  display: grid;
+  grid-template-rows: minmax(50px, 1fr) 10fr;
+}
+.info-box__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.info-box__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info-box__main__content {
+  border-top: var(--border-color);
+  margin: 10px;
+}
+.main__content__title {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.main__content__text {
+}
+.mouseover button {
+  background-color: var(--selected-button-color);
+  border: var(--selcted-border-color);
+  color: white;
+}
